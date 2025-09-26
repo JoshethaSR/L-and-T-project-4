@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      text-align: center;
+    }
+    /* Header */
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    header nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #4cafef, #007acc);
+      color: white;
+      padding: 40px 20px;
+    }
+    .hero-text {
+      max-width: 500px;
+      margin: 10px;
+    }
+    .hero-img img {
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+    /* Features Section */
+    .features {
+      padding: 40px 20px;
+      background: #f9f9f9;
+    }
+    .features h2 {
+      margin-bottom: 20px;
+    }
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .feature {
+      background: white;
+      margin: 10px;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    }
+    /* Pricing Section */
+    .pricing {
+      padding: 40px 20px;
+      background: #007acc;
+      color: white;
+    }
+    .pricing h2 {
+      margin-bottom: 20px;
+    }
+    /* CTA Button */
+    .cta {
+      background: #ff5722;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    .cta:hover {
+      background: #e64a19;
+    }
+    /* Footer */
+    footer {
+      background: #222;
+      color: white;
+      padding: 15px;
+    }
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">BrandName</div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Introducing Our Premium Product</h1>
+      <p>High quality, reliable, and designed with you in mind.</p>
+      <button class="cta">Buy Now</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://via.placeholder.com/400x300" alt="Product Image">
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>Why Choose Our Product?</h2>
+    <div class="feature-list">
+      <div class="feature">✔ High Durability</div>
+      <div class="feature">✔ Sleek Design</div>
+      <div class="feature">✔ Affordable Pricing</div>
+      <div class="feature">✔ Customer Support</div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <h2>Special Price: $49.99</h2>
+    <button class="cta">Order Now</button>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>&copy; 2025 BrandName. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
